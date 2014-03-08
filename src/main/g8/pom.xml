@@ -29,6 +29,10 @@
       <layout>p2</layout>
       <url>http://download.eclipse.org/releases/$eclipse_platform$</url>
     </repository>
+    <repository>
+      <id>nexus-repo</id>
+      <url>$nexus_public$</url>
+    </repository>
   </repositories>
   <build>
     <plugins>
@@ -64,4 +68,17 @@
       </plugin>
     </plugins>
   </build>
+
+  <distributionManagement>
+    <repository>
+      <id>nexus-releases</id>
+      <name>Releases</name>
+      <url>$nexus_release$</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <name>Snapshots</name> 
+      <url>$nexus_snapshot$</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
