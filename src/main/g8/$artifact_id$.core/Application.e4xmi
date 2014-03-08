@@ -2,10 +2,13 @@
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_fzrRoKT5EeOMv_ROsJVhMw" elementId="org.eclipse.e4.ide.application" bindingContexts="_fzrRqaT5EeOMv_ROsJVhMw">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_fzrRoaT5EeOMv_ROsJVhMw" label="$artifact_id$.core" width="500" height="400">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_fzr4w6T5EeOMv_ROsJVhMw">
-      <children xsi:type="advanced:Perspective" xmi:id="_fzr4xKT5EeOMv_ROsJVhMw">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_fzr4xaT5EeOMv_ROsJVhMw">
-          <children xsi:type="basic:PartStack" xmi:id="_fzr4xqT5EeOMv_ROsJVhMw">
-            <children xsi:type="basic:Part" xmi:id="_fzr4x6T5EeOMv_ROsJVhMw" contributionURI="bundleclass://$artifact_id$.core/$group_id$.core.parts.SamplePart" label="Sample Part"/>
+      <children xsi:type="advanced:Perspective"
+                xmi:id="_fzr4xKT5EeOMv_ROsJVhMw" elementId="$artifact_id$.core.perspective" label="Sample">
+        <children xsi:type="basic:PartSashContainer"
+                  xmi:id="_fzr4xaT5EeOMv_ROsJVhMw" elementId="$artifact_id$.core.container">
+          <children xsi:type="basic:PartStack"
+                    xmi:id="_fzr4xqT5EeOMv_ROsJVhMw" elementId="$artifact_id$.core.stack">
+            <children xsi:type="basic:Part" xmi:id="_fzr4x6T5EeOMv_ROsJVhMw" contributionURI="bundleclass://$artifact_id$.core/$package$.core.parts.SamplePart" label="Sample Part"/>
           </children>
         </children>
       </children>
@@ -16,6 +19,12 @@
         <children xsi:type="menu:HandledMenuItem" xmi:id="_fzr4v6T5EeOMv_ROsJVhMw" label="Save" iconURI="platform:/plugin/$artifact_id$.core/icons/save_edit.gif" command="_fzr4tqT5EeOMv_ROsJVhMw"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_fzr4wKT5EeOMv_ROsJVhMw" label="Quit" command="_fzrRrKT5EeOMv_ROsJVhMw"/>
       </children>
+      <children xsi:type="menu:Menu" xmi:id="_WOyhYKdyEeOenvzk4XAUwA" elementId="edit" label="Edit"/>
+      <children xsi:type="menu:Menu" xmi:id="_2UercKdyEeOenvzk4XAUwA" elementId="navigate" label="Navigate"/>
+      <children xsi:type="menu:Menu" xmi:id="_8TTaUKdyEeOenvzk4XAUwA" elementId="search" label="Search"/>
+      <children xsi:type="menu:Menu" xmi:id="_9549oKdyEeOenvzk4XAUwA" elementId="project" label="Project"/>
+      <children xsi:type="menu:Menu" xmi:id="__U9NcKdyEeOenvzk4XAUwA" elementId="run" label="Run"/>
+      <children xsi:type="menu:Menu" xmi:id="_BwL5wKdzEeOenvzk4XAUwA" elementId="window" label="Window"/>
       <children xsi:type="menu:Menu" xmi:id="_fzr4waT5EeOMv_ROsJVhMw" label="Help">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_fzr4wqT5EeOMv_ROsJVhMw" label="About" command="_fzr4uaT5EeOMv_ROsJVhMw"/>
       </children>
@@ -27,10 +36,10 @@
       </children>
     </trimBars>
   </children>
-  <handlers xmi:id="_fzr4sKT5EeOMv_ROsJVhMw" elementId="$group_id$.core.handler.quitCommand" contributionURI="bundleclass://$artifact_id$.core/$group_id$.core.handlers.QuitHandler" command="_fzrRrKT5EeOMv_ROsJVhMw"/>
-  <handlers xmi:id="_fzr4tKT5EeOMv_ROsJVhMw" elementId="$group_id$.core.handler.openCommand" contributionURI="bundleclass://$artifact_id$.core/$group_id$.core.handlers.OpenHandler" command="_fzr4s6T5EeOMv_ROsJVhMw"/>
-  <handlers xmi:id="_fzr4t6T5EeOMv_ROsJVhMw" elementId="$group_id$.core.handler.saveCommand" contributionURI="bundleclass://$artifact_id$.core/$group_id$.core.handlers.SaveHandler" command="_fzr4tqT5EeOMv_ROsJVhMw"/>
-  <handlers xmi:id="_fzr4uqT5EeOMv_ROsJVhMw" elementId="$group_id$.core.handler.aboutCommand" contributionURI="bundleclass://$artifact_id$.core/$group_id$.core.handlers.AboutHandler" command="_fzr4uaT5EeOMv_ROsJVhMw"/>
+  <handlers xmi:id="_fzr4sKT5EeOMv_ROsJVhMw" elementId="$group_id$.core.handler.quitCommand" contributionURI="bundleclass://$artifact_id$.core/$package$.core.handlers.QuitHandler" command="_fzrRrKT5EeOMv_ROsJVhMw"/>
+  <handlers xmi:id="_fzr4tKT5EeOMv_ROsJVhMw" elementId="$group_id$.core.handler.openCommand" contributionURI="bundleclass://$artifact_id$.core/$package$.core.handlers.OpenHandler" command="_fzr4s6T5EeOMv_ROsJVhMw"/>
+  <handlers xmi:id="_fzr4t6T5EeOMv_ROsJVhMw" elementId="$group_id$.core.handler.saveCommand" contributionURI="bundleclass://$artifact_id$.core/$package$.core.handlers.SaveHandler" command="_fzr4tqT5EeOMv_ROsJVhMw"/>
+  <handlers xmi:id="_fzr4uqT5EeOMv_ROsJVhMw" elementId="$group_id$.core.handler.aboutCommand" contributionURI="bundleclass://$artifact_id$.core/$package$.core.handlers.AboutHandler" command="_fzr4uaT5EeOMv_ROsJVhMw"/>
   <bindingTables xmi:id="_fzr4saT5EeOMv_ROsJVhMw" bindingContext="_fzrRqaT5EeOMv_ROsJVhMw">
     <bindings xmi:id="_fzr4sqT5EeOMv_ROsJVhMw" keySequence="M1+Q" command="_fzrRrKT5EeOMv_ROsJVhMw"/>
     <bindings xmi:id="_fzr4taT5EeOMv_ROsJVhMw" keySequence="M1+O" command="_fzr4s6T5EeOMv_ROsJVhMw"/>
@@ -41,8 +50,24 @@
     <children xmi:id="_fzrRqqT5EeOMv_ROsJVhMw" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_fzrRq6T5EeOMv_ROsJVhMw" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
   </rootContext>
+  <descriptors xmi:id="_9E9jYNS4EeGBn6dQ9VPexA" elementId="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources//icons/full/eview16/resource_persp.gif" category="org.eclipse.e4.primaryNavigationStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_W6yT4NSjEeGgKvWHVYtRxQ" elementId="org.eclipse.ui.console.ConsoleView" label="Console" iconURI="platform:/plugin/org.eclipse.ui.console//icons/full/cview16/console_view.gif" allowMultiple="true" category="org.eclipse.e4.secondaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_W6ziANSjEeGgKvWHVYtRxQ" elementId="org.eclipse.ui.views.ProgressView" label="Progress" iconURI="platform:/plugin/org.eclipse.ui.ide//icons/full/eview16/pview.gif" category="org.eclipse.e4.secondaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_W63zcdSjEeGgKvWHVYtRxQ" elementId="org.eclipse.ui.views.PropertySheet" label="Properties" iconURI="platform:/plugin/org.eclipse.ui.views//icons/full/eview16/prop_ps.gif" allowMultiple="true" category="org.eclipse.e4.secondaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
   <commands xmi:id="_fzrRrKT5EeOMv_ROsJVhMw" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
-  <commands xmi:id="_fzr4s6T5EeOMv_ROsJVhMw" elementId="$group_id$.core.open" commandName="openCommand"/>
+  <commands xmi:id="_fzr4s6T5EeOMv_ROsJVhMw" elementId="$package$.core.open" commandName="openCommand"/>
   <commands xmi:id="_fzr4tqT5EeOMv_ROsJVhMw" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
   <commands xmi:id="_fzr4uaT5EeOMv_ROsJVhMw" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
   <addons xmi:id="_fzrRoqT5EeOMv_ROsJVhMw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>

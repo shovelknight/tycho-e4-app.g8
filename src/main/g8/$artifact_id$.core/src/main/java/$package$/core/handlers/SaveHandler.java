@@ -8,7 +8,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package $group_id$.core.handlers;
+package $package$.core.handlers;
 
 import java.lang.reflect.InvocationTargetException;
 

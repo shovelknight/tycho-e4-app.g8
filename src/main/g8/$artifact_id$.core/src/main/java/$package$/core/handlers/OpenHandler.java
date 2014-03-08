@@ -8,18 +8,21 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package $group_id$.core.handlers;
+package $package$.core.handlers;
 
 import javax.inject.Named;
 
 import org.eclipse.e4.core.di.annotations.Execute;
 import org.eclipse.e4.ui.services.IServiceConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Shell;
 
-public class AboutHandler {
+public class OpenHandler {
+
 	@Execute
-	public void execute(@Named(IServiceConstants.ACTIVE_SHELL) Shell shell) {
-		MessageDialog.openInformation(shell, "About", "Eclipse 4 Application example.");
+	public void execute(
+			@Named(IServiceConstants.ACTIVE_SHELL) Shell shell){
+		FileDialog dialog = new FileDialog(shell);
+		dialog.open();
 	}
 }
