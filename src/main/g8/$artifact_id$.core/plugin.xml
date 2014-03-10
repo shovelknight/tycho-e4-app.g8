@@ -5,7 +5,7 @@
          id="product"
          point="org.eclipse.core.runtime.products">
       <product
-            name="$artifact_id$.core"
+            name="$artifact_id$"
             application="$artifact_id$.core.application">
          <property
                name="applicationCSS"
@@ -38,7 +38,7 @@
          point="org.eclipse.ui.perspectives">
       <perspective
             class="$package$.compatibility.Perspective"
-            id="$artifact_id$.core.perspective"
+            id="org.eclipse.ui.main.perspective"
             name="$artifact_id$ perspective">
       </perspective>
    </extension>

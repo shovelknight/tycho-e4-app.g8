@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="$artifact_id$.core" uid="$artifact_id$.product" id="$artifact_id$.core.product" application="$artifact_id$.core.application" version="$version$.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="$artifact_id$" uid="$artifact_id$.product" id="$artifact_id$.core.product" application="$artifact_id$.core.application" version="$version$.qualifier" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>

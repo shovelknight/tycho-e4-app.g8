@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_fzrRoKT5EeOMv_ROsJVhMw" elementId="org.eclipse.e4.ide.application" bindingContexts="_fzrRqaT5EeOMv_ROsJVhMw">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_fzrRoaT5EeOMv_ROsJVhMw" label="$artifact_id$.core" width="500" height="400">
-    <children xsi:type="advanced:PerspectiveStack" xmi:id="_fzr4w6T5EeOMv_ROsJVhMw">
+    <children xsi:type="advanced:PerspectiveStack"
+              xmi:id="_fzr4w6T5EeOMv_ROsJVhMw" elementId="org.eclipse.ui.main.perspectivestack">
       <children xsi:type="advanced:Perspective"
-                xmi:id="_fzr4xKT5EeOMv_ROsJVhMw" elementId="$artifact_id$.core.perspective" label="Sample">
+                xmi:id="_fzr4xKT5EeOMv_ROsJVhMw" elementId="org.eclipse.ui.main.perspective" label="Sample">
         <children xsi:type="basic:PartSashContainer"
-                  xmi:id="_fzr4xaT5EeOMv_ROsJVhMw" elementId="$artifact_id$.core.container">
+                  xmi:id="_fzr4xaT5EeOMv_ROsJVhMw" elementId="org.eclipse.ui.main.partsashcontainer">
           <children xsi:type="basic:PartStack"
-                    xmi:id="_fzr4xqT5EeOMv_ROsJVhMw" elementId="$artifact_id$.core.stack">
+                    xmi:id="_fzr4xqT5EeOMv_ROsJVhMw" elementId="org.eclipse.ui.main.partstack">
             <children xsi:type="basic:Part" xmi:id="_fzr4x6T5EeOMv_ROsJVhMw" contributionURI="bundleclass://$artifact_id$.core/$package$.core.parts.SamplePart" label="Sample Part"/>
           </children>
         </children>
       </children>
     </children>
     <mainMenu xmi:id="_fzr4vKT5EeOMv_ROsJVhMw" elementId="menu:org.eclipse.ui.main.menu">
-      <children xsi:type="menu:Menu" xmi:id="_fzr4vaT5EeOMv_ROsJVhMw" label="File">
+      <children xsi:type="menu:Menu" xmi:id="_fzr4vaT5EeOMv_ROsJVhMw" elementId="org.eclipse.ui.file.menu" label="File">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_fzr4vqT5EeOMv_ROsJVhMw" label="Open" iconURI="platform:/plugin/$artifact_id$.core/icons/sample.gif" command="_fzr4s6T5EeOMv_ROsJVhMw"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_fzr4v6T5EeOMv_ROsJVhMw" label="Save" iconURI="platform:/plugin/$artifact_id$.core/icons/save_edit.gif" command="_fzr4tqT5EeOMv_ROsJVhMw"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_fzr4wKT5EeOMv_ROsJVhMw" label="Quit" command="_fzrRrKT5EeOMv_ROsJVhMw"/>
       </children>
-      <children xsi:type="menu:Menu" xmi:id="_WOyhYKdyEeOenvzk4XAUwA" elementId="edit" label="Edit"/>
-      <children xsi:type="menu:Menu" xmi:id="_2UercKdyEeOenvzk4XAUwA" elementId="navigate" label="Navigate"/>
-      <children xsi:type="menu:Menu" xmi:id="_8TTaUKdyEeOenvzk4XAUwA" elementId="search" label="Search"/>
-      <children xsi:type="menu:Menu" xmi:id="_9549oKdyEeOenvzk4XAUwA" elementId="project" label="Project"/>
-      <children xsi:type="menu:Menu" xmi:id="__U9NcKdyEeOenvzk4XAUwA" elementId="run" label="Run"/>
-      <children xsi:type="menu:Menu" xmi:id="_BwL5wKdzEeOenvzk4XAUwA" elementId="window" label="Window"/>
-      <children xsi:type="menu:Menu" xmi:id="_fzr4waT5EeOMv_ROsJVhMw" label="Help">
+      <children xsi:type="menu:Menu" xmi:id="_WOyhYKdyEeOenvzk4XAUwA" elementId="org.eclipse.ui.edit.menu" label="Edit"/>
+      <children xsi:type="menu:Menu" xmi:id="_2UercKdyEeOenvzk4XAUwA" elementId="org.eclipse.ui.navigate.menu" label="Navigate"/>
+      <children xsi:type="menu:Menu" xmi:id="_8TTaUKdyEeOenvzk4XAUwA" elementId="org.eclipse.ui.search.menu" label="Search"/>
+      <children xsi:type="menu:Menu" xmi:id="_9549oKdyEeOenvzk4XAUwA" elementId="org.eclipse.ui.project.menu" label="Project"/>
+      <children xsi:type="menu:Menu" xmi:id="__U9NcKdyEeOenvzk4XAUwA" elementId="org.eclipse.ui.run.menu" label="Run"/>
+      <children xsi:type="menu:Menu" xmi:id="_BwL5wKdzEeOenvzk4XAUwA" elementId="org.eclipse.ui.window.menu" label="Window"/>
+      <children xsi:type="menu:Menu" xmi:id="_fzr4waT5EeOMv_ROsJVhMw" elementId="org.eclipse.ui.help.menu" label="Help">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_fzr4wqT5EeOMv_ROsJVhMw" label="About" command="_fzr4uaT5EeOMv_ROsJVhMw"/>
       </children>
     </mainMenu>
