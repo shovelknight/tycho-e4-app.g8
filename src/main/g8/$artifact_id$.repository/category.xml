@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature id="$artifact_id$.feature" version="$version$">
+   <feature id="$artifact_id$.feature" version="0.0.0">
       <category name="$artifact_id$.category"/>
    </feature>
    <category-def name="$artifact_id$.category" label="$artifact_id$ category"/>
