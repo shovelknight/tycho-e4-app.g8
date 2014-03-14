@@ -19,7 +19,7 @@
 
     <properties>
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
-	<buildTimestamp>${maven.build.timestamp}</buildTimestamp>
+	<buildTimestamp>\${maven.build.timestamp}</buildTimestamp>
         <java.version>$java_version$</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <tycho.version>$tycho_version$</tycho.version>
